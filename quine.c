@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(){char*x="#include <stdio.h>int main(){char*x=;for(int i=0;i<18;i++){putchar(x[i]);}putchar(10);for(int i=18;i<36;i++){putchar(x[i]);}putchar(34);printf(x);putchar(34);for(int i=36;i<210;i++){putchar(x[i]);}putchar(10);}";for(int i=0;i<18;i++){putchar(x[i]);}putchar(10);for(int i=18;i<36;i++){putchar(x[i]);}putchar(34);printf(x);putchar(34);for(int i=36;i<210;i++){putchar(x[i]);}putchar(10);}
