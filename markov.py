@@ -12,6 +12,7 @@ def build_model(text):
     model = {}
     for i, word in enumerate(words):
         word = ''.join(c for c in word if c in ALLOWED)
+        if not word: continue
         if i == len(words) - 1 or word[-1] == '.':
             next_word = '.'
             word = word[:-1]
@@ -56,5 +57,5 @@ def get_next_word(possible):
             return word[0]
 
 
-meat_model = build_model(open('training.txt', 'r').read())
+meat_model = build_model(open('/home/hanss/Documents/University/courses/CSC148/assignments/a2/data/lotr.txt', 'r').read())
 print(get_sentence(meat_model, sys.argv[1]))
